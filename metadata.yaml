@@ -1,0 +1,242 @@
+last-updated: "Aug. 2024"
+name:
+  first: Priyam 
+  last: Dalmia
+job-title: Software Developer
+project-source-link: "https://github.com/priyamDalmia/pandoc-portfolio.git"
+# a short summary that appears under the title on the portfolio website
+short-summary: I am a programmer trained in Data Analytics and Engineering. My interests lie in Statistics, Reinforcement Learning, Multi-Agent Systems, and Distributed, Parallel and High-Performance Computing. These are some of things I've built and done.
+# a long summary that appears under the title on the resume 
+long-summary: I am a qualified programmer with a keen interest in software development and data science. I bring 4+ years of experience from both the industry and the academia. I have worked in roles as a cloud developer, data scientist and an academic researcher. My skill-set includes Python and AWS cloud development, large scale data engineering, linux administration and R/Excel data analysis. I pursue active research in subjects like machine learning and RL, decision making and optimization, game theory and economics.
+# these icons appear under the title on the resume
+# icons from : https://techicons.dev/
+resume-links:
+  - name: github
+    text: Github 
+    link: "https://github.com/priyamDalmia"
+  - name: envelope
+    text: Mail 
+    link: "mailto:dalmia.priyam@outlook.com"
+  - name: home
+    text: Portfolio 
+    link: "https://priyamdalmia.github.io"
+# these icons appear under the photo on the portfolio home page
+portfolio-links:
+  - name: github-icon
+    text: Github 
+    href: "https://github.com/priyamDalmia"
+  - name: outlook 
+    text: Mail 
+    href: "dalmia.priyam@outlook.com"
+  - name: discord 
+    text: Discord 
+    href: "https://discord.gg/f22gD9Js"
+  - name: linkedin 
+    text: LinkedIn 
+    href: "www.linkedin.com/in/priyamdalmia"
+  - name: google-scholar
+    text: Google Scholar 
+    href: "https://scholar.google.com.au/citations?hl=en&user=O1I0bVAAAAAJ"
+  - name: cv-portfolio 
+    text: CV
+    href: "resume.pdf"
+
+# these sections appear on the resume
+research-section:
+  header: Research & Publications
+  label: research
+  items:
+    - title: "General causal estimation for cooperative multi-agent reinforcement learning."
+      publication: "AJCAI 2024"
+      publication-link: "http://"
+      start-date: Jan. 2024
+      end-date: July 2024
+      comments: ongoing
+      annotations:
+        - University of Melbourne
+        - J. West
+        - P. Dalmia
+      notes:
+        - We analyze the effects of promoting causal influence on the overall cooperation between agents in MARL. We conduct a through experimental analysis motivated by the recent advances in experimental reinforcement learning and discuss the results in detail. We see that causal influence is an effective variable to improve coordination in reinforcement learning.
+    - title: "The RAS Battle: Tactical Adaptability as a Capability to scale combat mass."
+      # publication: "AJCAI 2024"
+      start-date: Jan. 2024
+      end-date: ongoing 
+      publication-link: "https://findanexpert.unimelb.edu.au/project/306351-the-ras-battle--tactical-adaptability-as-a-capability-for-scaling-combat-mass"
+      annotations: 
+        - Australian Defence Force
+        - K. Tollenar
+        - J. Keane
+        - J. West
+        - P. Dalmia
+      notes:
+        - Tactical adaptability as a capability, input to capability or a property of a capability, to ensure readiness in an event of rapid advancement of AI and autonomous systems.
+    - title: "An experiment design protocol for reproducible reinforcement learning."
+      # publication: "NeurIPS 2024"
+      start-date: Jan. 2023
+      end-date: Aug. 2024
+      comments: submitted 
+      publication-link: "https://github.com/priyamDalmia/dard-rl"
+      annotations:
+        - University of Melbourne
+        - J. West
+        - P. Dalmia
+      notes:
+        - We propose a standardized experiment design protocol for reproducible reinforcement learning. We establish a sound ontology and use it for the design, analysis, reporting and distribution of reinforcement learning experiments.
+    - title: "On the statistical efficiency of population-based training approaches."
+      # publication: "NeurIPS 2024"
+      start-date: Jan. 2023
+      end-date: Aug. 2024
+      comments: submitted 
+      publication-link: "https://priyamdalmia.github.io"
+      annotations:
+        - University of Melbourne
+        - J. West
+        - P. Dalmia
+      notes:
+        - Population based training approach is an interesting alternative to random hyper parameter search in RL. However its compatiblity with modern evaluation protocols for reinforcement learning is understudied. Our results show that PBT may improve computation time while retaining the statistical rigour in RL.
+    - title: "An evaluation suite of predator-prey dynamics in multi-agent systems."
+      publication: "ICLR 2024"
+      start-date: Sep. 2023
+      end-date: Feb. 2024
+      publication-link: "https://github.com/priyamDalmia/savannah.git"
+      annotations:
+        - University of Melbourne
+        - J. West
+        - P. Dalmia
+      notes:
+        - An evaluation suite of predator-prey dynamics in multi-agent systems.
+
+experience-section:
+  header: Experience
+  label: experience
+  items: 
+    - title: Research Assistant 
+      start-date: Oct. 2023
+      end-date: ongoing
+      annotations:
+        - University of Melbourne
+        - Melbourne
+      notes:
+        - Published work on experimental design and engineering problems in AI through the support of multiple research grants; actively conducted workshops and lectures in the same, utilizing advanced HPC tools and statistical methodologies.
+        - Conducted research on the design of experimental reinforcement learning and evaluation of predator-prey dynamics in multi-agent systems.
+    - title: Software Developer
+      start-date: Aug. 2022
+      end-date: Sep. 2023
+      annotations:
+        - 1kind Pvt. Ltd.
+        - Melbourne
+      notes:
+        - Led the development of an AWS-hosted trading platform, that included a back-end trading and hedging engine, a front-end dashboard and a data analytics pipeline; followed best practices around test driven development and CI/CD with Python.
+    - title: Jr. Data Scientist
+      start-date: Jan. 2018
+      end-date: Jan. 2020
+      annotations:
+        - Probe Information Services
+        - India 
+      notes: 
+        - Collaborated on the development of large-scale ETL pipelines for financial services, abstractive text summarization models, and predictive analytics for credit risk assessment. 
+    - title: Data Science Intern
+      start-date: Jan. 2022
+      end-date: July 2022
+      annotations:
+        - Melbourne Data Analytics Platform
+        - Melbourne
+      notes:
+        - Mentored by multiple senior researchers, assisted in the development of large data science research projects developing sound practices in academic writing, publishing, empirical research and statistical analysis.
+
+education-section:
+  header: Education
+  label: education
+  items:
+    - title: Masters in Data Science 
+      start-date: Feb. 2020
+      end-date: July 2022
+      comments: "GPA: 3.8/4.0"
+      annotations:
+        - University of Melbourne
+        - Australia
+    - title: Bachelor of Mechatronics and Robotics Engineering 
+      start-date: Jan. 2016
+      end-date: Dec. 2019
+      comments: First Class with Distinction
+      annotations:
+        - Manipal Institute of Technology
+        - India
+
+references-section:
+  header: References
+  label: references
+  items:
+    - title: Joseph West
+      comments: "joseph.west@unimelb.edu.au"
+      annotations: 
+        - Associate Dean
+        - University of Melbourne
+    - title: Daniel Kovacs
+      comments: "daniel.kovacs@1kind.com"
+      annotations:
+        - CTO
+        - 1kind Pvt. Ltd.
+
+project-section: 
+  header: Projects
+  label: projects
+  items:
+    - title: "DARD RL: Design, Analyze, Report and Distribute RL Agents"
+      start-date: Jan. 2023
+      end-date: Aug. 2024
+      publication-link: "link to docs"
+      github-link: "https://github.com/priyamDalmia/dard-rl.git"
+      icons:
+        - python 
+        - tensorflow 
+        - pytorch 
+        - bash
+        - docker
+        - wandb
+        - ray 
+      notes:
+        - We propose a design protocol for experimental reinforcement learning.
+  
+    - title: "Causal Multi-Agent Algorithms with RLlib"
+      start-date: Jan. 2024
+      end-date: Aug. 2024
+      publication-link: "link to docs"
+      github-link: "https://github.com/priyamDalmia/causal-marl.git"
+      icons:
+        - python
+        - tensorflow
+        - pytest 
+        - docker
+        - github-actions
+      notes:
+        - We propose a novel causal estimation framework for cooperative multi-agent reinforcement learning, which is based on the idea of counterfactual reasoning. We show that our method outperforms existing methods on a variety of tasks.
+  
+    - title: "pandoc portfolio generator"
+      start-date: July. 2024
+      end-date: Aug. 2024
+      publication-link: "link to docs"
+      github-link: "https://github.com/priyamDalmia/pandoc-portfolio.git"
+      icons:
+        - makefile 
+        - html5 
+        - tex 
+        - markdown
+        - github-actions
+      notes:
+        - A simple python script that generates a portfolio website from a markdown file using pandoc.
+
+    - title: "Savannah: An environment to evaluate predator-prey dynamics."
+      start-date: Jan. 2023
+      end-date: Aug. 2024
+      publication-link: "link to docs"
+      github-link: "https://github.com/priyamDalmia/savannah.git"
+      icons:
+        - python 
+        - pytorch
+        - travis 
+        - numpy
+        - matplotlib
+      notes:
+        - We propose an evaluation suite of predator-prey dynamics in multi-agent systems.

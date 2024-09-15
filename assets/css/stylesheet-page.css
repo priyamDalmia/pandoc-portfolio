@@ -1,0 +1,132 @@
+:root{
+    --primary-background:rgb(189, 189, 189);
+    --primary-text:#202020;    
+    --sblack: rgba(17, 17, 17, 0.932);
+}
+
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Libre Caslon Text', serif;
+    color: var(--primary-text);
+    background-image: radial-gradient(currentColor 0.5px, transparent 0.5px), 
+    radial-gradient(black 0.5px, rgb(236, 236, 236) 0.5px);
+    background-size: calc(20 * 1px) calc(20 * 1px);
+    background-position: 0 0, calc(10 * 5px) calc(10 * 5px)
+}
+
+a {
+     text-decoration:none;
+     color: var(--primary-text);
+}
+
+p {
+    line-height: 1.3;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.toolbar {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width:100%;
+    height: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    opacity: 1.0;
+    color: white;
+    background-color: var(--sblack);
+    justify-content: space-between;
+}
+
+.toolbar div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar p {
+    margin: auto;
+    font-family: Consolas, monaco, monospace;
+    font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400;
+}
+
+.content {
+    position: absolute;
+    top: 2.5vh;
+    left:10%;
+    right: 10%;
+    max-width: 80vw;
+    min-width: 1100px;
+    margin: auto;
+    background-color: rgb(236, 236, 236);
+ }
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.box {
+    display: grid;
+    margin: auto;
+    height: 95%;
+    width: 95%;
+    padding: 5vh 3vh;
+}
+
+.type-1 .left {
+    text-align: center;
+    align-items: center;
+}
+
+.type-1 .right {
+    background-color: var(--sblack);
+    color: white;
+    text-align: right;
+    font-size: 28px;
+    overflow: hidden;
+}
+
+.type-2 .right {
+    text-align: center;
+    align-items: center;
+}
+
+.type-2 .left {
+    background-color: var(--sblack);
+    color: white;
+    text-align: right;
+    font-size: 28px;
+    overflow: hidden;
+}
+
+/*page specific styles here*/
+
+.page-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cover-img {
+    max-height: 100%;
+    max-width: 100%;
+}

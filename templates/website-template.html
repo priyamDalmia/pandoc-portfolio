@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<head>
+    <title>$name.first$'s Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05LRN9HPPS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-05LRN9HPPS');
+    </script>
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="toolbar-address">
+            <p> /home/ <b>></b></p>
+        </div>
+        <div class="toolbar-icons">
+            <a href="$project-source-link$" target="_blank" title="Source Code">
+                <img class="source-icon" src="assets/svgs/html-white.svg" alt="Source">
+            </a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="profile-content page">
+            <div class="box white">
+                <div style="grid-row-start: 1">
+                    <img class="mugshot" src="assets/mugshot.png" alt="mugshot here!">
+                </div>
+                <h3 style="grid-row-start: 2">Hi! I'm $name.first$ $name.last$.</h3>
+                <p style="font-size:1.1em">$short-summary$</p>
+                <div class="contact-icons" style="grid-row-start: 4">
+                    $for(portfolio-links)$
+                    <a href="$portfolio-links.href$">
+                        <img class="icons" src="assets/svgs/$portfolio-links.name$.svg" alt="Source">
+                    </a>
+                    $endfor$
+                </div>
+            </div>
+            <div class="box black">
+                <nav style="grid-row-start: 1">
+                    <ul class="nav-options">
+                        <li><a href="#$project-section.label$">$project-section.header$</a></li>
+                        $for(research-section/first)$
+                        <li><a href="#$resume-sections.label$">$research-section.header$</a></li>
+                        $endfor$
+                        <li><a href="./pages/common/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="tabs">
+            <a class="tab-btn"><label for="tab1">Highlights</label></a>
+            <div class="vl"></div>
+            <a class="tab-btn"><label for="tab2">R&egravesum&egrave</label></a>
+        </div>
+        <div class="tab-content">
+            <input class="radio-btn" checked id="tab1" type="radio" name="1">
+            <div class="tab-content-box">
+                <section id="$project-section.label$">
+                    <div id="$project-section.label$"> 
+                        <h3 class="section-name" label>$project-section.header$</h3>
+
+                        $for(project-section.items)$
+                        <div class="child">
+                            <h4 class="child-title"><a href="$sections.items.publication-link$.html">$project-section.items.title$</a>
+                            </h4>
+                            <h5 class="child-sub">
+                                <a href="$project-section.items.github-link$">
+                                    <img class="sub-icons" src="assets/svgs/github-icon.svg" alt="GitHub" 
+                                   >
+                                </a>
+
+                                | $for(project-section.items.icons)$
+                                <img class="sub-icons" src="assets/svgs/$project-section.items.icons$.svg" alt="$project-section.items.icons$">
+                                $endfor$
+                            $if(project-section.items.notes)$
+                            </h5>
+                            <ul class="child-summary child-sub">
+                                $for(project-section.items.notes)$
+                                <li>$project-section.items.notes$</li>
+                                $endfor$
+                            </ul>
+                            $endif$
+                        </div>
+                        $endfor$
+
+                    </div>
+                </section>
+            </div>
+            <input class="radio-btn" id="tab2" type="radio" name="1">
+            <div class="tab-content-box">
+                <section id="$research-sections.label$">
+                    <div>
+                        <h3 class="section-name" id="$research-section.label$">$research-section.header$</h3>
+                        $for(research-section.items)$
+                        <div class="child">
+                            <h4 class="child-title">
+                                <a href="$research-section.items.publication-link$">$research-section.items.title$</a>
+                            </h4>
+                            <h5 class="child-sub">
+                                $if(research-section.items.annotations)$
+                                | $for(research-section.items.annotations/allbutlast)$
+                                $research-section.items.annotations$,
+                                $endfor$
+                                $research-section.items.annotations/last$
+                                $endif$
+                                | $research-section.items.end-date$.
+                            </h5>
+                            $if(research-section.items.notes)$
+                            <ul class="child-summary child-sub">
+                                $for(research-section.items.notes)$
+                                <li>$research-section.items.notes$</li>
+                                $endfor$
+                            </ul>
+                            $endif$
+                        </div>
+                        $endfor$
+                    </div>
+                </section>
+                <section id="$experience-section.label$">
+                    <div>
+                        <h3 class="section-name" id="$experience-section.label$">$experience-section.header$</h3>
+
+                        $for(experience-section.items)$
+                        <div class="child">
+                            <h4 class="child-title">
+                                $experience-section.items.title$
+                            </h4>
+                            <h5 class="child-sub">
+                                $if(experience-section.items.annotations)$
+                                | $for(experience-section.items.annotations/allbutlast)$
+                                $experience-section.items.annotations$,
+                                $endfor$
+                                $experience-section.items.annotations/last$
+                                $endif$
+                                | $experience-section.items.end-date$.
+                            </h5>
+                            $if(experience-section.items.notes)$
+                            <ul class="child-summary child-sub">
+                                $for(experience-section.items.notes)$
+                                <li>$experience-section.items.notes$</li>
+                                $endfor$
+                            </ul>
+                            $endif$
+                        </div>
+                        $endfor$
+                    </div>
+                </section>
+                <section id="$education-section.label$">
+                    <div>
+                        <h3 class="section-name" id="$education-section.label$">$education-section.header$</h3>
+
+                        $for(education-section.items)$
+                        <div class="child">
+                            <h4 class="child-title">
+                                $education-section.items.title$
+                            </h4>
+                            <h5 class="child-sub">
+                                $if(education-section.items.annotations)$
+                                | $for(education-section.items.annotations/allbutlast)$
+                                $education-section.items.annotations$,
+                                $endfor$
+                                $education-section.items.annotations/last$
+                                $endif$
+                                | $education-section.items.end-date$.
+                            </h5>
+                            $if(resume-sections.items.notes)$
+                            <ul class="child-summary child-sub">
+                                $for(resume-sections.items.notes)$
+                                <li>$resume-sections.items.notes$</li>
+                                $endfor$
+                            </ul>
+                            $endif$
+                        </div>
+                        $endfor$
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
